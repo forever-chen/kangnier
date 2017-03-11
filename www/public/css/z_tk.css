@@ -1,0 +1,140 @@
+.z_tk {
+  width: 990px;
+  margin: 0 auto;
+  margin-top: 78px;
+  margin-bottom: 145px; }
+  .z_tk > .top {
+    width: 100%;
+    height: 290px; }
+    .z_tk > .top > .Text {
+      float: left; }
+    .z_tk > .top > .tImg {
+      float: right;
+      width: 660px;
+      height: 100%; }
+  .z_tk > .content {
+    width: 100%;
+    height: 534px; }
+    .z_tk > .content > .left {
+      width: 330px;
+      height: 100%;
+      float: left; }
+      .z_tk > .content > .left > .Img {
+        height: 267px;
+        width: 100%; }
+      .z_tk > .content > .left > .Text {
+        width: 100%;
+        height: 267px; }
+    .z_tk > .content > .right {
+      width: 660px;
+      height: 534px;
+      float: right; }
+      .z_tk > .content > .right > .Img {
+        float: left;
+        width: 330px;
+        height: 267px; }
+      .z_tk > .content > .right > .Text {
+        float: left;
+        width: 330px;
+        height: 267px; }
+
+.z_tk .btn {
+  position: absolute; }
+
+.z_tk .btn1 {
+  top: 18px;
+  left: 34px;
+  transform: rotate(-90deg); }
+
+.z_tk .btn2 {
+  left: 30px;
+  bottom: 30px; }
+
+.z_tk .btn3 {
+  left: 33px;
+  bottom: 7px;
+  transform: rotate(180deg); }
+
+.z_tk .tText {
+  width: 330px;
+  height: 290px;
+  padding: 40px 57px 40px 40px;
+  box-sizing: border-box; }
+
+.z_tk .Text {
+  position: relative;
+  width: 330px;
+  height: 290px;
+  padding: 64px 21px 40px 32px;
+  box-sizing: border-box; }
+  .z_tk .Text > h1 {
+    font-size: 28px;
+    color: #212121;
+    margin-bottom: 20px; }
+  .z_tk .Text > h2 {
+    line-height: 20px;
+    font-size: 16px;
+    opacity: .8;
+    color: #8a8a8a;
+    margin-bottom: 23px; }
+  .z_tk .Text > h3 {
+    font-size: 16px;
+    color: #7f7f7f;
+    line-height: 24px; }
+
+.z_tk .Img {
+  position: relative; }
+  .z_tk .Img:hover .black {
+    opacity: 0; }
+  .z_tk .Img > .black {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    opacity: .25;
+    transition: all .8s ease;
+    z-index: 1; }
+  .z_tk .Img > img {
+    width: 100%;
+    height: 100%; }
+
+.z_tk .Text2 {
+  padding-top: 39px; }
+
+.second-bg {
+  width: 100%;
+  height: 730px;
+  position: relative;
+}
+.second-bg .second-img {
+  width: 100%;
+  height: 730px;
+  background-position: center center;
+  background-repeat: no-repeat; }
+.xdz_nav{
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.z_body{
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  margin-top: -110px;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+.xdz_bottom{
+  position: relative;
+  z-index: -1;
+  margin-top:-90px;
+}
+.ad{
+  padding-bottom: 325px;
+}

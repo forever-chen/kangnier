@@ -1,0 +1,96 @@
+.cyh_join{
+    max-width:1920px;
+    margin:0 auto;
+}
+.cyh_join_nei{
+    padding-top: 129px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    /*background-color: #000;*/
+    /*height: 1332px;*/
+}
+.cyh_bot{
+
+    padding: 133px 0;
+    width: auto;
+    height:auto;
+    background: url("/public/img/cyh_beijing.gif") no-repeat;
+    background-position: center;
+    position: relative;
+}
+.cyh_bot .cyh_zhe{
+    position: absolute;
+    width: 100%;
+    top:0;
+    height:916px;
+    background-color: #000;
+    opacity: 0.5;
+}
+.cyh_join_nei::after{
+    display: block;
+    content: " ";
+    width: 100%;
+    clear: both;
+}
+.cyh_every{
+    position: relative;
+    z-index:2;
+    width: 332px;
+    height:526px;
+    display: inline-block;
+    text-align: center;
+    margin:0 25px;
+    /*background: white;*/
+}
+.cyh_every img{
+    height: 65%;
+    width: 100%;
+}
+.cyh_every .cyh_titlell{
+    margin-top: 35px;
+}
+.cyh_leader{
+    line-height: 30px;
+    font-size: 18px;
+}
+.cyh_every .cyh_more{
+    color: #a4a4a4;
+    width: 91px;
+    height: 27px;
+    border-radius: 14px;
+    text-align: center;
+    line-height: 27px;
+    font-size:12px;
+    border:1px solid #a4a4a4;
+    margin:38px auto;
+}
+#cyh_big{
+    width:429px;
+    height:652px;
+    background: url("../img/transparent.gif") no-repeat;
+    position: relative;
+    padding: 22px;
+    box-sizing: border-box;
+}
+#cyh_big img{
+    width:100%;;
+}
+.cyh_inner{
+    width: 100%;
+    height: 100%;
+    background: white
+}
+.rsx_name{
+    position: static;
+    margin-bottom: 55px;
+}
+.rsx_name .one{
+    color: #000;
+}
+.rsx_name .two{
+    color: #000;
+}
+.rsx_name .three{
+    color: #000;
+}

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  font-family: "微软雅黑", "黑体";
+  font-size: 14px;
+  box-sizing: border-box; }
+
+#content {
+  position: relative;
+  z-index: 1;
+  width: 1200px;
+  min-height: 2600px;
+  margin: 0 auto;
+  margin-top: -100px;
+  margin-bottom: -80px;
+  background: #fff;
+  box-shadow: 0 5px 5px #ececec;
+  padding: 0 105px; }
+  #content .lq_title {
+    width: 665px;
+    height: 208px;
+    margin: 0 auto;
+    background: url(../img/l_title_03.png) center center no-repeat; }
+  #content .lq_pic {
+    margin: 0 auto;
+    margin-top: 170px; }
+  #content .lq_introduction {
+    margin-top: 50px; }
+    #content .lq_introduction .int-first .title {
+      color: #1f1f1f; }
+    #content .lq_introduction .int-first .title.one {
+      font-size: 22px;
+      font-weight: bold; }
+    #content .lq_introduction .int-first .title.two {
+      font-size: 20px;
+      padding-top: 32px; }
+    #content .lq_introduction .int-first .article {
+      font-size: 16px;
+      color: #7f7f7f;
+      line-height: 2.0em;
+      padding-top: 22px; }
+    #content .lq_introduction .int-first .article-english {
+      font-size: 16px;
+      color: #7f7f7f;
+      line-height: 2.0em;
+      padding-top: 22px;
+      font-family: "SanFranciscoDisplay"; }
+    #content .lq_introduction .int-second .sec-title {
+      font-size: 18px;
+      color: #434343;
+      padding-top: 40px; }
+    #content .lq_introduction .int-second .sec-tit-eng {
+      font-size: 18px;
+      color: #8c8c8c;
+      line-height: 2.0em; }
+    #content .lq_introduction .int-second .article {
+      font-size: 16px;
+      color: #7f7f7f;
+      line-height: 2.0em;
+      padding-top: 10px; }
+.xdz_nav{
+  z-index: 5;
+}
+
+
+ .topLine {
+  width: 1200px;
+  margin-left: -105px;
+  height: 6px;
+  background: #e5006e; }
+ .crumbs {
+  margin-left: -44px;
+  margin-top: 26px; }
+ .crumbs span {
+  font-size: 14px;
+  color: #8e8e8e; }
+ .crumbs a {
+  font-size: 14px;
+  color: #8e8e8e; }
+ .crumbs a:hover {
+  color: #e5006e; }
+ .crumbs > .in {
+  color: #e5006e; }
+ .ad{
+     margin-top: 90px;
+ }

@@ -1,0 +1,71 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, input, form {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    font-family: Arial,"微软雅黑","宋体";
+    font-size: 14px;
+}
+.rsx_name{
+    min-width: 400px;
+    min-height: 170px;
+    margin: 0 auto 0;
+    position: relative;
+    text-align: center;
+}
+.rsx_name .rsx_one{
+    display: inline-block;
+    min-width: 100px;
+
+    text-align: center;
+    position: relative;
+}
+.rsx_name .rsx_one .rsx_font{
+    min-width: 100px;
+    font-size: 48px;
+    font-family: kang-Bold;
+}
+.rsx_name .rsx_one .Topdian{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: -25px;
+    top:-10px;
+}
+.rsx_name .rsx_one .Topdian .topmin{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;bottom: 0;
+}
+.rsx_name .rsx_one .Topdian .topmax{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.rsx_name li{
+    text-align: center;
+}
+.rsx_name .two{
+    margin-top: 8px;
+    font-family: Rsxfont;
+    font-size: 30px;
+    opacity: 0.9;
+}
+.rsx_name .three{
+    font-size: 24px;
+    opacity: 0.8;
+    width: 450px;
+    text-align: center;
+    margin: 0 auto;
+}
+.rsx_name .four{
+    width: 23px;
+    height: 3px;
+    margin:  20px auto ;
+    position: relative;
+    z-index: 4;
+}

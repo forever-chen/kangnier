@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "San Francisco";
+  src: url("../fonts/System San Francisco Display Regular.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #222222;
+  font-family: "San Francisco",'MicrosoftYaHei'; }
+
+.z_hot {
+  overflow: hidden;
+  margin-bottom: 118px; }
+
+.z_titlebox {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center; }
+  .z_titlebox > h1 {
+    display: inline;
+    font-size: 36px;
+    font-weight: bold; }
+  .z_titlebox > h2 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 36px;
+    font-weight: inherit; }
+  .z_titlebox > h3 {
+    font-size: 14px;
+    text-align: center; }
+  .z_titlebox > span {
+    display: block;
+    font-size: 14px;
+    text-align: center; }
+
+.z_content {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 60px; }
+  .z_content > .imgBox {
+    float: left;
+    width: 450px;
+    height: 290px;
+    position: relative;
+    margin-bottom: 10px; }
+    .z_content > .imgBox > .bigBox {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      .z_content > .imgBox > .bigBox > .Cimg {
+        width: 100%;
+        height: 100%;
+        transition: all .8s ease; }
+        .z_content > .imgBox > .bigBox > .Cimg:hover {
+          transform: scale(1.2, 1.2); }
+    .z_content > .imgBox > .Cadd {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      right: -28px; }
+  .z_content > .Cclass {
+    float: right;
+    width: 530px;
+    height: 290px;
+    border: 1px solid #e5e5e5;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-bottom: 10px; }
+    .z_content > .Cclass > h1 {
+      font-weight: normal;
+      font-size: 28px;
+      color: #1d1d1d; }
+    .z_content > .Cclass > span {
+      display: block; }
+    .z_content > .Cclass > .t1 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 15px;
+      color: #353535; }
+    .z_content > .Cclass > .t2 {
+      font-size: 16px;
+      color: #353535; }
+    .z_content > .Cclass > .t3 {
+      margin-top: 40px;
+      font-size: 16px;
+      color: #4c4c4c; }
+    .z_content > .Cclass > .t4 {
+      font-size: 12px;
+      color: #8a8a8a;
+      line-height: 1em;
+      margin-top: 10px; }
+
+.z_re {
+  overflow: hidden;
+  margin-bottom: 150px; }
+
+.z_refer {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 36px;
+  clear: both;
+  height: 250px;
+  position: relative; }
+  .z_refer:hover :after {
+    height: 100%;
+    opacity: 1; }
+  .z_refer:hover :before {
+    opacity: 1;
+    height: 100%; }
+  .z_refer > :after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 0;
+    transition: all .8s ease;
+    width: 10px;
+    left: -32px;
+    top: 0;
+    background: #e5006e; }
+  .z_refer > :before {
+    content: "";
+    position: absolute;
+    height: 0%;
+    bottom: 0;
+    margin: auto 0;
+    transition: all .8s ease;
+    width: 10px;
+    right: -32px;
+    top: 0;
+    background: #e5006e; }
+  .z_refer > .left {
+    float: left; }
+    .z_refer > .left > img {
+      width: 390px;
+      height: 250px; }
+  .z_refer > .right {
+    float: right;
+    margin-left: 37px;
+    width: 573px;
+    height: 250px; }
+    .z_refer > .right > .top {
+      width: 100%;
+      height: 70px;
+      border-bottom: 1px solid #f2f2f2;
+      position: relative; }
+      .z_refer > .right > .top > .num {
+        float: left;
+        display: block; }
+      .z_refer > .right > .top > .logo {
+        position: absolute;
+        left: 74px;
+        top: 10px; }
+      .z_refer > .right > .top > h2 {
+        color: #212121;
+        font-size: 18px;
+        position: absolute;
+        left: 74px;
+        bottom: 25px; }
+    .z_refer > .right > .content > h1 {
+      font-size: 18px;
+      color: #7f7f7f;
+      margin: 10px 0;
+      line-height: 1.5em; }
+    .z_refer > .right > .content > h2 {
+      font-size: 16px;
+      color: #8a8a8a;
+      line-height: 1.5em;
+      margin-bottom: 20px; }
+    .z_refer > .right > .content > .more {
+      display: block;
+      width: 100px;
+      height: 36px;
+      border-radius: 36px;
+      border: 1px solid #c0bfbe;
+      text-align: center;
+      line-height: 36px;
+      color: #7c7c7c;
+      cursor: pointer; }
+      .z_refer > .right > .content > .more:hover {
+        color: #ea3996; }
+
+.ad {
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto; }
+
+.z_body {
+  width: 1200px;
+  box-shadow: 0 5px 6px #ececec; }
+  .z_body > .topLine {
+    width: 100%;
+    height: 6px;
+    background: #e5006e; }
+  .z_body > .crumbs {
+    margin-left: 61px;
+    margin-top: 26px; }
+    .z_body > .crumbs span {
+      font-size: 14px;
+      color: #8e8e8e; }
+    .z_body > .crumbs a {
+      font-size: 14px;
+      color: #8e8e8e; }
+      .z_body > .crumbs a:hover {
+        color: #e5006e; }
+    .z_body > .crumbs > .in {
+      color: #e5006e; }
+
+.z_TabBox {
+  width: 1000px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 130px;
+  margin-bottom: 77px; }
+  .z_TabBox > .line {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .z_TabBox > .z_classBox {
+    width: auto;
+    margin: 0 auto;
+    text-align: center; }
+    .z_TabBox > .z_classBox > .z_class {
+      padding: 13px 35px;
+      text-align: center;
+      display: inline-block;
+      color: #b4b4b4;
+      font-size: 14px;
+      background: linear-gradient(to bottom, #ebebeb 0%, #f3f3f3 50%, #ebebeb 100%);
+      border-radius: 4px;
+      margin: 0 21px;
+      cursor: pointer; }

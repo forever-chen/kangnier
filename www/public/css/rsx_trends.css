@@ -1,0 +1,113 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, input, form {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    font-family: Arial,"微软雅黑","宋体";
+    font-size: 14px;
+}
+.rsxts{
+    background: #fff;
+    width: 100%;
+    height: 870px;
+    position: relative;
+    padding-top: 110px;
+}
+.rsx_end{
+    background: #ffffff;
+    width: 1200px;
+    height: 410px;
+    margin: 70px auto 0;
+}
+.rsx_end .end_box{
+    width: 300px;
+    height: 410px;
+    float: left;
+    position: relative;
+}
+.end_box .end_zhuan{
+    width: 168px;
+    height: 168px;
+    margin: 20px auto 50px;
+    position: relative;
+}
+.end_box .end_zhuan .quan{
+    position: absolute;
+    top: 0;left: 0;
+    width: 168px;
+    height: 168px;
+}
+.end_box .end_zhuan .quan img{
+    position: absolute;
+    width: 168px;
+}
+.end_box .end_zhuan .quan .look{
+    display: none;
+}
+.end_box .end_zhuan .tu .look{
+    display: none;
+}
+.end_box .end_zhuan .tu{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto auto;
+}
+.end_box .end_zhuan .tu img{
+    position: absolute;
+}
+.end_box .end_name{
+    position: relative;
+    z-index: 11;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+}
+.end_box .end_eng{
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.8;
+}
+.end_box .end_content{
+    width: 190px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    line-height:25px;
+}
+.end_box .end_img{
+    width: auto;
+    height: auto;
+    display: none;
+    position: absolute;
+    left: 0;bottom: 0;
+}
+#end_box .end_zhuan .quan .move{
+    display: none;
+}
+#end_box .end_zhuan .quan .look{
+    display: block;
+}
+#end_box .end_zhuan .tu .move{
+    display: none;
+}
+#end_box .end_zhuan .tu .look{
+    display: block;
+}
+#end_box .end_name{
+    color: #fff;
+    opacity: 1;
+}
+#end_box .end_eng{
+    color: #ffffff;
+    opacity: 0.8;
+}
+#end_box .end_content{
+    color: #ffffff;
+    opacity:0.9;
+}
+#end_box .end_img{
+    display: block;
+}

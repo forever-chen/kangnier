@@ -1,0 +1,41 @@
+.cyh_contact_nei{
+    height: auto;
+    text-align: center;
+    padding-top: 129px;
+    margin-bottom: 100px;
+}
+.cyh_last{
+    display: inline-block;
+    width: 332px;
+    height: auto;
+    margin: 0 25px;
+}
+.cyh_last .cyh_bo{
+    text-align: center;
+    font-size: 14px;
+    color: #121212;
+    line-height: 45px;
+}
+.rsx_name{
+    position: static;
+    margin-bottom: 90px;
+}
+.rsx_name .one{
+    color: #000;
+}
+.rsx_name .two{
+    color: #000;
+}
+.rsx_name .three{
+    color: #000;
+}
+.ali{
+    display: inline-block;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    background: #e5006e;
+
+}

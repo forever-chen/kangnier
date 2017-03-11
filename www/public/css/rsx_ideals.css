@@ -1,0 +1,109 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, input, form {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    font-family: Arial,"微软雅黑","宋体";
+    font-size: 14px;
+}
+.Ideals{
+    background: #fff;
+    width: 100%;
+    height: 910px;
+    position: relative;
+    padding-top: 130px;
+}
+.Rsxid{
+    width: 1200px;
+    height: 410px;
+    margin: 105px auto 0;
+}
+.rsx_car{
+    -moz-box-shadow:0px 2px 14px #777278; -webkit-box-shadow:0px 2px 14px #777278; box-shadow:0px 2px 14px #777278;
+    width:285px;
+    height: 390px;
+    float: left;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.car_one{
+    width: 82px;
+    height: 82px;
+    margin: 25px auto 25px;
+    position: relative;
+}
+.car_one img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.car_one .look{
+    display: none;
+}
+.car_two{
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+}
+.car_two .move{
+    margin: 0 auto;
+    width: 2px;
+    height:90px;
+    opacity: 0.8;
+    background: #1f1f1f;
+}
+.car_three{
+    width: 135px;
+    min-height: 20px;
+    margin: 20px auto 25px;
+    text-align: center;
+}
+.car_three .move{
+    font-size: 24px;
+    color: #1f1f1f;
+    margin: 0 auto ;
+}
+.car_three .look{
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.9;
+    display: none;
+}
+.car_four{
+    cursor: pointer;
+    margin: 30px auto 30px;
+    width: 102px;
+    height: 30px;
+    opacity: 0.8;
+    border:2px solid #1f1f1f;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 15px;
+}
+#rsx_nel{
+    background: #e5006e;
+    -moz-box-shadow:0px 2px 14px #e5006e; -webkit-box-shadow:0px 2px 14px #e5006e; box-shadow:0px 2px 14px #e5006e;
+}
+#rsx_nel .car_one .move{
+    display: none;
+}
+#rsx_nel .car_one .look{
+    display: block;
+}
+#rsx_nel .car_two .move{
+    height: 35px;
+    background: #ffffff;
+    opacity: 0.8;
+}
+#rsx_nel .car_three .move{
+    color: #f6f6f6;
+}
+#rsx_nel .car_three .look{
+    display: block;
+    padding-top: 20px;
+}
+#rsx_nel .car_four{
+    border:2px solid #ffffff;
+    opacity: 0.9;
+    color: #f6f6f6;
+}

@@ -1,0 +1,41 @@
+.example-input .ant-input {
+    width: 200px;
+    padding: 15px;
+    margin: 0 8px 8px 0;
+}
+.cyh_title{
+    margin-right:20px;
+}
+.cyh_name{
+    width: 15%;
+}
+.cyh_accout{
+    width: 20%;
+}
+.cyh_pass{
+    width: 20%;
+}
+.cyh_phone{
+    width: 20%;
+}
+.avatar-uploader,
+.avatar-uploader-trigger,
+.avatar {
+    width: 150px;
+    height: 150px;
+}
+.avatar-uploader {
+    display: block;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.avatar-uploader-trigger {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 28px;
+    color: #999;
+}
+.cyh_sub{
+    padding:30px 100px;
+}

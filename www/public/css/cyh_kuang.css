@@ -1,0 +1,30 @@
+.cyh_company{
+    width:336px;
+    height:64px;
+    border-radius:5px;
+    background-image: url('/public/img/xdz_nav.png');
+    background-size: 336px 64px;
+    background-position: center center;
+}
+.ant-layout-header{
+    height:74px;
+    padding-top:5px;
+    box-sizing:border-box;
+}
+.ant-menu-inline{
+    padding-top: 30px;
+}
+.ant-menu a{
+    color: rgba(0,0,0,.65);
+}
+#login .logo {
+    width: 120px;
+    height: 31px;
+    background: #333;
+    border-radius: 6px;
+    margin: 16px 28px 16px 0;
+    float: left;
+}
+#appear{
+    display: block;
+}

@@ -1,0 +1,131 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, input, form {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    font-family: Arial,"微软雅黑","宋体";
+    font-size: 14px;
+}
+.back{
+    background: url('../img/rsx_1.jpg')no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 1030px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.selection{
+    position: absolute;
+    left: 0;right: 0;
+    bottom: 100px;
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+}
+.selection .log{
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 640px;
+    margin-right: 60px;
+}
+.log .bottom img{
+    position: absolute;
+    width: 360px;
+}
+.log .bottom .bai{
+    opacity: 0;
+}
+.log .top{
+    position: absolute;
+    width: 360px;
+    height: 640px;
+}
+.log .top .head{
+    overflow: hidden;
+    margin:70PX auto 40PX auto;
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    background: black;
+}
+.log .top .head img{
+    width: 100%;
+    height:100%;
+}
+.log .top li{
+    text-align: center;
+}
+.log .top .fontone{
+    font-size: 26px;
+    /*font-family: Rsxfont;*/
+    font-weight: bold;
+}
+.log .top .fonttwo{
+    font-size: 24px;
+    color: #666;
+}
+.log .top .fontthree{
+    margin: auto;
+    width: 70%;
+    font-size: 18px;
+    color: #666;
+    line-height: 30px;
+}
+.log .understand{
+    cursor: pointer;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    width: 148px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 24px;
+    position: absolute;
+    left: 0px;right: 0px;
+    bottom: 35px;
+    margin: 0 auto;
+}
+.log .understand p{
+    font-size: 18px;
+}
+#rsx_log  .bottom .bai{
+    opacity: 1;
+}
+#rsx_log  .fontone{
+   color: #eb4997;
+}
+#rsx_log  .fonttwo {
+    color: #f28eba;
+}
+#rsx_log  .fontthree {
+    color: #f28eba;
+}
+#rsx_log  .understand{
+    border: 1px solid #e5006e;
+    background: #e5006e;
+    color: #f6f6f6;
+}
+.rsx_btn{
+    width: 300px;
+    height: 23px;
+    position: absolute;
+    left: 0px;right: 0px;
+    bottom: 35px;
+    margin: 0 auto;
+}
+.rsx_btn a{
+    width: 80px;
+    height: 3px;
+    margin: 0 10px 0;
+    padding:10px 0;
+    float: left;
+}
+.rsx_btn a li{
+    height: 3px;
+    width: 80px;
+    background: #e8e8e8;
+}
+.rsx_btn a .rsx_hover{
+    background: #e5006e;
+}
