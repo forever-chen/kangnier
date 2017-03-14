@@ -36,7 +36,7 @@ class Body extends  React.Component{
                 </div>
                 <p className="xdz_cont">康伲尔杯“中国好身材，享瘦你就来”经过近两个月的减肥狂潮，全国各地的达人们收获的不仅仅是体重的下降，傲人的身材，更变身成为了养生专家，对健康的养生观念有了新的认识。各位达人纷纷自信的表示，2017一定会无比幸福，现在的口头禅都成了“今天你瘦了多少”？</p>
                 <div className="xdz_imgbox">
-                    <img src="/public/img/banner22222.jpg"/>
+                    <img src="/public/img/banner2.png"/>
                 </div>
                  <div className="xdz_co">2017年3月7日下午，56位优秀的康伲尔家人，做客中央电视台大演播厅，共同参加央视“见证企业成长”高端访谈节目。郭总、黄总这对被业界称为“神雕侠侣”的创业夫妻档，用他们14年的敬业与专业，打造中国好身材，塑造健康新生活，让天下人健康长寿！</div>
                 <div className="xdz_line">

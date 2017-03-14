@@ -7,7 +7,6 @@ app.use(compression());
 
 //react的缺点首屏可交互时间长
 
-
 /////////////////////////////////
 var cookieParser = require('cookie-parser');
 app.use(cookieParser());
@@ -47,7 +46,7 @@ app.listen(3000, () => {
     console.log('服务启动')
 });
 process.on('uncaughtException', function (ex) {
-    console.log('error')
+    console.log(ex)
 })
 
 

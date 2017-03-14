@@ -11,7 +11,13 @@ module.exports = {
         cyh_admin: path.resolve('./dev/cyh_admin.jsx'),
         xdz_detail: path.resolve('./dev/xdz_detail.jsx'),
         fu: path.resolve('./dev/fu.jsx'),
-        login:path.resolve('./dev/login.jsx')
+        login:path.resolve('./dev/login.jsx'),
+        zk_sli:path.resolve('./dev/zk_sli.jsx'),
+        zk_navlist:path.resolve('./dev/zk_navlist.jsx'),
+        news:path.resolve('./dev/news.jsx'),
+        redact:path.resolve('./dev/redact.jsx'),
+        message:path.resolve('./dev/x_message.jsx'),
+        company:path.resolve('./dev/company.jsx')
     },
     output: {path: path.resolve('www/public/js'), filename: '[name].js'},
     module: {

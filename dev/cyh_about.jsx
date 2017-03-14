@@ -8,9 +8,9 @@ class Cyh_video extends React.Component {
                 <video id="really-cool-video" className="cyh_v video-js vjs-default-skin vjs-big-play-centered" controls
                        preload="auto" width="640" height="264" poster="/public/img/cyh_1.gif"
                        data-setup='{}'>
-                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                    {/*<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />*/}
                     <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
-                        <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg'/>
+                    <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg'/>
                 </video>
                 {/*<video src="/public/img/movie(2).ogg" className="cyh_v" poster="/public/img/cyh_1.gif"*/}
                        {/*controls="controls"></video>*/}

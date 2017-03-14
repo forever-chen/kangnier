@@ -1,15 +1,40 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
-const common=require('./common.jsx');
-const arr=['/public/img/banner3.png'];//二级页面banner图片
-var data1=[{add:'北京市朝阳区SOHO现代城5号1802室',email:'Carnel@126.com',tel:'010-65664088/65664068 400-666-3288'}];
+const common = require('./common.jsx');
+const arr = ['/public/img/banner3.png'];//二级页面banner图片
+var data1 = [{add: '北京市朝阳区SOHO现代城5号1802室', email: 'Carnel@126.com', tel: '010-65664088/65664068 400-666-3288'}];
 
 class Contact extends React.Component {
     constructor(props) {
         super(props);
+        this.submit = this.submit.bind(this);
+    }
+
+    submit(e) {
+        e.preventDefault();
+        var values = {
+            name: this.name.value,
+            phone: this.phone.value,
+            email: this.email.value,
+            message: this.message.value
+        }
+        if (values.message) {
+            fetch('/add_message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'same-origin',
+                body: JSON.stringify(values)
+            }).then((res) => res.json()).then((data) => {
+                if (data === 'ok') {
+                    alert('留言成功');
+                }
+            })
+        }
     }
     render() {
-        const address=this.props.data1.map((v,i)=>{
+        const address = this.props.data1.map((v, i) => {
             return (
                 <div className="address" key={i}>
                     <ul>
@@ -81,17 +106,21 @@ class Contact extends React.Component {
                     <div className="form-right">
                         <form className="form-inline">
                             <div className="form-group">
-                                <input type="text" className="form-control" placeholder="NAME"/>
-                                <input type="text" className="form-control" placeholder="PHONE"/>
+                                <input type="text" className="form-control" placeholder="NAME"
+                                       ref={(e) => this.name = e}/>
+                                <input type="number" className="form-control" placeholder="PHONE"
+                                       ref={(e) => this.phone = e}/>
                             </div>
                             <div className="form-group">
-                                <input type="email" className="form-control" placeholder="EMAIL"/>
+                                <input type="email" className="form-control" placeholder="EMAIL"
+                                       ref={(e) => this.email = e}/>
                             </div>
                             <div className="form-group">
-                                <textarea name="" id="message" placeholder="MESSAGE" cols="30" rows="10"></textarea>
+                                <textarea name="" id="message" placeholder="MESSAGE" cols="30" rows="10"
+                                          ref={(e) => this.message = e}></textarea>
                             </div>
                             <div className="form-group">
-                                <button type="submit" className="btn submit">提交</button>
+                                <button type="submit" className="btn submit" onClick={this.submit}>提交</button>
                                 <button type="submit" className="btn reset">重置</button>
                             </div>
                         </form>
@@ -101,9 +130,9 @@ class Contact extends React.Component {
         )
     }
 }
-class C extends React.Component{
-    render(){
-        return(
+class C extends React.Component {
+    render() {
+        return (
             <div>
                 <common.Tn/>
                 <common.second data={arr}/>

@@ -1,7 +1,7 @@
 const React = require('react');
 const banner = ['/public/img/banner1.png', '/public/img/banner2.png', '/public/img/banner3.png'];
 var data0=[
-    {src:'/brand',nav:'品牌介绍',ying:'Introduction'},{src:'/news',nav:'新闻中心',ying:'News center'},{src:'/join',nav:'招商加盟',ying:'investment'},{src:'/book',nav:'拓客宝典',ying:'guest book'},{src:'/slimming',nav:'减肥百科',ying:'slimming key'},{src:'http://www.carnel.cn/knesxy/',nav:'商学院',ying:'commercial'},{src:'/contact',nav:'联系我们',ying:'contact us'}
+    {src:'/brand',nav:'品牌介绍',ying:'Introduction'},{src:'/join',nav:'招商加盟',ying:'investment'},{src:'/brand/1',nav:'新闻中心',ying:'News center'},{src:'/book',nav:'拓客宝典',ying:'guest book'},{src:'/slimming',nav:'减肥百科',ying:'slimming key'},{src:'http://www.carnel.cn/knesxy/',nav:'商学院',ying:'commercial'},{src:'/contact',nav:'联系我们',ying:'contact us'}
 ]
 var data2=[
     {title:'最新动态',content:{a:'滴滴瘦身',b:'康伲尔排毒套',c:'康伲儿至尊御臂',d:'康伲儿至尊御臂',e:'康伲儿集团大事记'}},{title:'加盟指南',content:{a:'投资分析',b:'加盟流程',c:'加盟条件',d:'加盟级别',e:'零风险处理'}},{title:'减肥百科',content:{a:'康伲儿·V脸',b:'中国好身材',c:'最新活动',d:'减肥助手',e:'拓客宝典'}},{title:'康尼尔品牌',content:{a:'董事长助手',b:'品牌简介',c:'品牌荣誉',d:'团队风采',e:'企业文化'}}
@@ -138,7 +138,7 @@ class Topnav extends React.Component{
         return(
             <div className="xdz_nav">
                 <div className="xdz_nav_left">
-                    <img src="/public/img/xdz_nav.png"/>
+                    <a href="/"><img src="/public/img/xdz_nav.png"/></a>
                 </div>
                 <ul className="xdz_nav_right">
                     {navs}

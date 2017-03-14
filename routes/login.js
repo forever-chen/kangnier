@@ -69,7 +69,7 @@ router.post('/check', (req, res) => {
                 console.log(req.body)
                 req.session.login = 'login';
                 if (req.body.rem) {
-                    res.cookie('hash', result[0].hash, {path: '/', expires: new Date(Date.now() + 60000)})
+                    res.cookie('hash', result[0].hash, {path: '/', expires: new Date(Date.now() + 6000000)})
                 }
                 res.json('ok');
             } else {

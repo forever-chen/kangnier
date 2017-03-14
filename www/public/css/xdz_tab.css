@@ -191,7 +191,7 @@
 
 .z_body {
   width: 1200px;
-  box-shadow: 0 0 10px #ececec; }
+  box-shadow: 0 5px 6px #ececec; }
   .z_body > .topLine {
     width: 100%;
     height: 6px;

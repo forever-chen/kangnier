@@ -206,6 +206,7 @@ a {
         margin-top: 44px;
         padding-left: 310px; }
         .content .form-contact .form-right .form-inline .form-group:nth-child(4) .btn {
+          cursor:pointer;
           width: 106px;
           height: 34px;
           border: 1px solid #929292;

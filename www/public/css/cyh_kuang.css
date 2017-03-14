@@ -24,7 +24,11 @@
     border-radius: 6px;
     margin: 16px 28px 16px 0;
     float: left;
+    display: none;
 }
 #appear{
     display: block;
+}
+*{
+    font-size: 14px;
 }
