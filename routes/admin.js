@@ -60,7 +60,6 @@ route.post('/add_company',(req,res)=>{
 //////////////////////////////////公司信息页面更新
 route.post('/update_company',(req,res)=>{
    let sql=`update company set ${req.body.key}=? where con_id=?`;
-   console.log(sql)
    mysql.query(sql,[req.body.value,req.body.index],(err,result)=>{
        res.json('ok')
    })
@@ -68,14 +67,12 @@ route.post('/update_company',(req,res)=>{
 //////////////////////////////////公司信息是否推荐到首页
 route.post('/switchcom',(req,res)=>{
     let sql=`update company set state = ? where con_id=?`;
-    console.log(sql)
     mysql.query(sql,[req.body.value,req.body.id],(err,result)=>{
         res.json('ok')
     })
 });
 //////////////////////////////////公司信息页面删除
 route.post('/del_company',(req,res)=>{
-    console.log(req.body.id)
     let sql='delete from company where con_id=?';
     mysql.query(sql,[req.body.id],(err,result)=>{
         if(!err){
@@ -103,11 +100,38 @@ route.post('/navlist',(req,res)=>{
 });
 //////////////////////////////////更改二级页面banner图
 route.post('/changenav',(req,res)=>{
-    console.log(req.body.state,req.body.id)
     mysql.query('update navlist set state=? where nav_id=?',[req.body.state,req.body.id],(err,result)=>{
        if(!err){
            res.json('ok')
        };
+    })
+});
+//新闻页面查找
+route.post('/nav/all',(req,res)=>{
+    mysql.query('select * from cate',(err,data)=>{
+        res.json(data);
+    })
+});
+//新闻页面删除
+route.get('/nav/del/:id',(req,res)=>{
+    let sql="DELETE FROM `cate` WHERE id=?"
+    mysql.query(sql,[req.params.id],(err,result)=>{
+        res.redirect('/admin/nav')
+    })
+});
+//新闻页面添加
+route.post('/nav/push',(req,res)=>{
+    let sql="INSERT INTO `cate`( `catename`, `pid`, `url`) VALUES (?,?,?)";
+    mysql.query(sql,['','',''],(err,result)=>{
+        if(err){
+            res.json(err);
+        }
+    })
+});
+//新闻页面修改
+route.post('/nav/update',(req,res)=>{
+    let sql=`UPDATE cate SET ${req.body.key}=? WHERE id=?`
+    mysql.query(sql,[req.body.value,req.body.index],(err,result)=>{
     })
 });
 //////////////////////////////////选项卡导航列表获取
@@ -118,7 +142,6 @@ route.post('/newslist',(req,res)=>{
 });
 //////////////////////////////////管理者图片上传
 route.post('/upload', upload.single('avatar'), function (req, res) {
-    console.log(req.file.filename)
   async.series([
     function (callback) {
       fs.createReadStream(req.file.path).pipe(fs.createWriteStream('./www/public/img/' + req.file.filename));
@@ -137,7 +160,6 @@ route.post('/upload', upload.single('avatar'), function (req, res) {
 
 
 route.post('/news_detail',(req,res)=>{
-    // console.log(req.body);
     mysql.query('select * from news_detail where sli_id=?',[req.body.id],(err,result)=>{
         res.json(result);
     })
@@ -186,6 +208,8 @@ request('fu.html','/page/:page_id');
 
 /////////////////
 request('message.html','/message');
+/////////////////
+request('zqy_details.html','/nav');
 ///////////////////
 request('company.html','/company');
 ///////////////////

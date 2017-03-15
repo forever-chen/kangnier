@@ -4,6 +4,7 @@ import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 import { Table, Input, Button, Popconfirm } from 'antd';
+const admin=require('./admin.jsx');
 
 class Join extends React.Component{
     render(){
@@ -75,8 +76,8 @@ class EditableTable extends React.Component {
     constructor(props) {
         super(props);
         this.columns = [{
-            title: 'Pid',
-            dataIndex: 'Pid',
+            title: '类型(1:小标题,2:大标题)',
+            dataIndex: 'pid',
             width: '25%',
             render: (text, record, index) => (
                 <EditableCell
@@ -85,8 +86,8 @@ class EditableTable extends React.Component {
                 />
             ),
         }, {
-            title: 'CateName',
-            dataIndex: 'CateName',
+            title: '标题名称',
+            dataIndex: 'catename',
             width: '25%',
             render: (text, record, index) => (
                 <EditableCell
@@ -95,7 +96,7 @@ class EditableTable extends React.Component {
                 />
             ),
         },{
-            title: 'url',
+            title: '路径',
             dataIndex: 'url',
             width: '25%',
             render: (text, record, index) => (
@@ -108,63 +109,93 @@ class EditableTable extends React.Component {
             title: '删除',
             dataIndex: '删除',
             render: (text, record, index) => {
-                return (
-                    this.state.dataSource.length > 0 ?
-                        (
-
-                            <Popconfirm title="Sure to delete?" onConfirm={() => this.onDelete(index)}>
-                                <Button type="danger">删除</Button>
-                            </Popconfirm>
-                        ) : null
-                );
+                return (<a onClick={this.onDelete} href={`/admin/nav/del/${record.id}`} type="danger">删除</a>);
             },
         }];
         this.state = {
-            dataSource: [{
-                Pid: '0',
-                CateName: 'kangnier',
-                url: '/views/index/index.html'
-            }, {
-                Pid: '1',
-                CateName: 'kangnier',
-                url: '/views/admin/login.html'
-            }],
-            count: 2,
+            dataSource: [
+            //     {
+            //     Pid: '0',
+            //     CateName: 'kangnier',
+            //     url: '/views/index/index.html'
+            // },{
+            //     Pid: '1',
+            //     CateName: 'kangnier',
+            //     url: '/views/admin/login.html'
+            // }
+            ]
         };
+
         this.handleAdd=this.handleAdd.bind(this);
         this.onCellChange=this.onCellChange.bind(this)
-    }
+    };
+    componentDidMount() {
+        fetch('/admin/nav/all',
+            {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                credentials: 'same-origin',
+            }).then((res) => res.json()).then((data) => {
+                this.setState({
+                    dataSource:data
+                });
+            }
+        )
+    };
     onCellChange(index, key){
         return (value) => {
             const dataSource = [...this.state.dataSource];
             dataSource[index][key] = value;
             this.setState({ dataSource });
+            let id=this.state.dataSource[index].id;
+            fetch('/admin/nav/update',{
+                method:'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'same-origin',
+                body:JSON.stringify({index:id,key:key,value:value})
+            })
         };
-    }
-    onDelete(index){
-        const dataSource = [...this.state.dataSource];
-        dataSource.splice(index, 1);
-        this.setState({ dataSource });
+
     }
     handleAdd(){
-        const { count, dataSource } = this.state;
-        const newData = {Pid:'',CateName:'',url:''};
+        const { dataSource } = this.state;
+        const newData = {
+            Pid:'',
+            CateName:'',
+            url:''};
         this.setState({
             dataSource: [...dataSource, newData]
         });
+        fetch('/admin/nav/push',{
+            method:"POST",
+            header:{
+                "Content-Type":"application/json"
+            },
+            credentials: 'same-origin',
+        }).then((res) => res.json()).then((data) => {
+        })
     }
     render() {
-        const { dataSource } = this.state;
         const columns = this.columns;
         return (
             <div>
-                <Button className="editable-add-btn" onClick={this.handleAdd}>添加</Button>
-                <Table bordered dataSource={dataSource} columns={columns} />
+                <Button style={{marginBottom:20}} className="editable-add-btn" onClick={this.handleAdd}>添加</Button>
+                <Table bordered dataSource={this.state.dataSource} columns={columns} />
             </div>
         );
     }
 }
-
-module.exports={
-    bnav:Join
+class A extends React.Component{
+    render(){
+        return(
+            <admin.admin>
+                <Join/>
+            </admin.admin>
+        )
+    }
 }
+ReactDOM.render(<A/>,document.getElementById('details'));

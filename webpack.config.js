@@ -15,6 +15,7 @@ module.exports = {
         zk_sli:path.resolve('./dev/zk_sli.jsx'),
         zk_navlist:path.resolve('./dev/zk_navlist.jsx'),
         news:path.resolve('./dev/news.jsx'),
+        zqy_admin_cate:path.resolve('./dev/zqy_admin_cate.jsx'),
         redact:path.resolve('./dev/redact.jsx'),
         message:path.resolve('./dev/x_message.jsx'),
         company:path.resolve('./dev/company.jsx')

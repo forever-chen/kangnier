@@ -69,6 +69,8 @@ class Login extends React.Component {
                             </SubMenu>
                             <SubMenu key="sub2" title={<span><Icon type="bars"/><a href="/admin/navlist">一级导航列表</a></span>}>
                             </SubMenu>
+                            <SubMenu key="sub8" title={<span><Icon type="bars"/><a href="/admin/nav">尾部导航</a></span>}>
+                            </SubMenu>
                             <SubMenu key="sub3" title={<span><Icon type="bars"/>新闻管理</span>}>
                                 {news}
                             </SubMenu>

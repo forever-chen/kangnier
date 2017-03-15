@@ -56,7 +56,7 @@ router.get('/', (req, res) => {
     })
 })
 router.post('/check', (req, res) => {
-    console.log(req.body)
+
     var hash = crypto.createHash('md5');
     hash.update(req.body.name + req.body.pass);
 
@@ -66,7 +66,7 @@ router.post('/check', (req, res) => {
             res.redirect('/login');
         } else {
             if (result[0].hash == x) {
-                console.log(req.body)
+
                 req.session.login = 'login';
                 if (req.body.rem) {
                     res.cookie('hash', result[0].hash, {path: '/', expires: new Date(Date.now() + 6000000)})
