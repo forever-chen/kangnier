@@ -42,7 +42,7 @@ app.use('/admin', adminRoute);
 app.use('/', indexRoute);
 app.use('/login', loginRoute);//在/login下使用
 
-app.listen(3000, () => {
+app.listen(8004, () => {
     console.log('服务启动')
 });
 process.on('uncaughtException', function (ex) {
