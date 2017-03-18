@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-03-14 02:00:51
+-- Generation Time: 2017-03-18 04:52:46
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -19,6 +19,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `kangnier`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `cate`
+--
+
+CREATE TABLE IF NOT EXISTS `cate` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `catename` varchar(255) NOT NULL,
+  `pid` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `cate`
+--
+
+INSERT INTO `cate` (`id`, `catename`, `pid`, `url`) VALUES
+(1, '康尼尔', 1, '');
 
 -- --------------------------------------------------------
 
@@ -113,7 +134,29 @@ CREATE TABLE IF NOT EXISTS `news_detail` (
   `sli_id` int(12) NOT NULL,
   PRIMARY KEY (`info_id`),
   KEY `sli_id` (`sli_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=24 ;
+
+--
+-- 转存表中的数据 `news_detail`
+--
+
+INSERT INTO `news_detail` (`info_id`, `etitle`, `ctitle`, `pic`, `econ`, `ccon`, `state`, `sli_id`) VALUES
+(1, '第一条英文标题', '第一条中文标题', '123456', '第一条英文内容', '第一条中文内容', 0, 2),
+(3, '第三条英文标题', '第三条中文标题', '123', '第三条英文内容', '第三条中文内容', 1, 2),
+(4, '第四条英文标题', '第四条中文标题', '123', '第四条英文内容', '第四条中文内容', 0, 2),
+(9, '', '', '', '', '', 0, 2),
+(10, '第10', '', '', '', '', 0, 2),
+(11, '', '', '', '', '', 0, 2),
+(12, '', '', '', '', '', 0, 4),
+(13, '', '', '', '', '', 0, 5),
+(16, '', '', '', '', '', 0, 3),
+(17, '', '', '', '', '', 0, 3),
+(18, '', '', '', '', '', 0, 3),
+(19, '', '', '', '', '', 0, 4),
+(20, '', '', '', '', '', 0, 4),
+(21, '', '', '', '', '', 0, 5),
+(22, '', '', '', '', '', 0, 5),
+(23, '', '', '', '', '', 0, 2);
 
 -- --------------------------------------------------------
 
